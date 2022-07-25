@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('./theme.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: var(--backgroundColor);
+  height: 100vh;
+  overflow-y: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 5px;
+  background: #F4F4F4;
+  margin: 5px 0;
+}
+
+header {
+  background: var(--headerBackgroundColor);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+}
+
+header img {
+  width: 60px;
+  height: 30px;
+}
+
+header h1 {
+  color: var(--headingColor);
+  /* font-style: italic; */
+}
+
+header a {
+  text-decoration: none;
+  color: var(--headingColor);
+  transition: all ease-in-out .5s;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: var(--hoverColor);
+}
+
+.active {
+  text-decoration: underline;
+  color: var(--hoverColor);
+}
+
+header button {
+  border: none;
+  background-color: grey;
+  border-radius: 8px;
+  width: 80px;
+  height: 20px;
+  color: #fff;
+}
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 80vh;
+  padding: 20px;
+  background-image: url('./images/pwcboot.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Hero * {
+  color: #fff;
+}
+
+.container {
+  margin: auto;
+  width: 500px;
+  overflow: auto;
+  padding: 3rem 2rem;
+}
+
+.services h3 {
+  text-align: center;
+  margin: 20px;
+  color: var(--headingColor);
+}
+
+#my-form {
+  padding: 2rem;
+  background: #F4F4F4;
+}
+
+#my-form label {
+  display: block;
+}
+
+#my-form input[type='text'] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.error {
+  background: orangered;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}
+
+footer {
+  background: var(--headerBackgroundColor);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: var(--headingColor)
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 500px;
+  margin: 0 12vw;
+}
+
+.heading {
+  text-align: center;
+  color: var(--headingColor);
+  margin: 20px;
+}
+
+.grid-item {
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: auto;
+}
+
+.grid-item img {
+  width: 300px;
+  height: 150px;
+}
+
+.contactUs {
+  text-align: center;
+  margin: 20px;
+  color: var(--headingColor);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+  color: var(--headingColor);
+  font-size: 18px;
+}
+
+.aboutUs {
+  margin: 20px;
+  width: 100%;
+  color: black;
+  text-align: justify;
+  padding: 10px;
+  line-height: 1.5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url("./images/pwc_aboutUs.jpeg"); */
+  height: 550px;
+}
+
+.about {
+  width: 50%;
+}
+
+.applicants-table {
+  margin: 8px;
+  background-color: #ccc;
+  gap: 8px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px #000;
+  border: 2px #fff;
+  border-radius: 5px;
+  margin: auto;
+}
+
+tr {
+  gap: 8px;
+  margin: 8px;
+  padding: 8px;
+
+}
+
+th {
+  padding: 10px;
+
+}
+
+td {
+  gap: 8px;
+  margin: 10px;
+  padding: 8px;
+  border-bottom: 1px black
+}
+
+td li {
+  background-color: transparent;
+}
+
+thead tr {
+  border: 2px solid black !important;
+}
+
+.main {
+  padding: 50px;
+}
+
+.hide {
+  display: none;
+}

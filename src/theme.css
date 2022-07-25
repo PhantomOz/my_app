@@ -1,0 +1,12 @@
+:root{
+    --headerBackgroundColor: #4C3A51;
+    --backgroundColor: #774360;
+    --headingColor: #E7AB79;
+    --hoverColor: #FFFFFF;
+}
+.light{
+    --headerBackgroundColor: #FAF3F3;
+    --headingColor: #000000;
+    --backgroundColor: #E1E5EA;
+    --hoverColor: #E7AB79;
+}
