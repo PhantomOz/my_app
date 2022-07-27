@@ -18,7 +18,7 @@ function Header() {
         <h1>PWC Student Website</h1>
       </div>
       <div>
-        <Link to="/" className="active">
+        <Link to="/" onClick={handleMenu} className="active">
           Home
         </Link>{" "}
         |

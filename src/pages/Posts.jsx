@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Postcard from '../components/Postcard';
 import './Post.css'
 
 function Posts() {
@@ -36,10 +37,7 @@ function Posts() {
             <div className='card_post'>
                  {post.map((item, index) => 
                    
-                    <div  key={item.id} style={{ width: '200px', height: '200px' }}>
-                        <h2>{item.id}</h2>
-                        <h3>{item.title}</h3>
-                    </div>
+                    <Postcard key={index} id={item.id} title={item.title}/>
                     )
                 }
 

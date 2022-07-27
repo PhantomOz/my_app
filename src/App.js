@@ -14,6 +14,7 @@ import Recruitmentform from "./pages/Recruitmentform";
 import Users from "./pages/Users";
 import Todo from "./pages/Todo";
 import Login from "./pages/Login";
+import Singleblogpost from "./pages/Singleblogpost";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/post" element={<Posts />} />
+        <Route path="/post/:id" element={<Singleblogpost />} />
         <Route path="/users" element={<Users />} />
         <Route path="/todos" element={<Todo />} />
         <Route path="/recruitmentform" element={<Recruitmentform />} />
