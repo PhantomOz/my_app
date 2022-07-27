@@ -216,7 +216,7 @@ footer {
   width: 50%;
 }
 
-.applicants-table {
+.applicants-table, .posts-table {
   margin: 8px;
   background-color: #ccc;
   gap: 8px;
@@ -260,4 +260,39 @@ thead tr {
 
 .hide {
   display: none;
+}
+
+.posts-table thead {
+  background-color: #009879;
+}
+
+.posts-table thead tr {
+  background-color: transparent;
+  color: #ffffff;
+  text-align: left;
+}
+.Posts{
+  padding: 50px;
+}
+.Posts > h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.posts-table th,
+.posts-table td {
+  padding: 12px 15px;
+}
+
+.posts-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  text-transform: capitalize;
+}
+
+.posts-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.posts-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
 }
